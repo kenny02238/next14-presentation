@@ -1,5 +1,5 @@
 import { cookies } from "next/headers";
-import Button from "@/components/Button";
+import Button from "../components/Button";
 
 export default async function Home() {
   cookies();

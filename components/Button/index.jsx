@@ -5,15 +5,30 @@ import { useRouter } from "next/navigation";
 const Button = () => {
   const router = useRouter();
   return (
-    <div class="flex gap-2 flex-col">
-      <button onClick={() => router.push("/current")}>
+    <div className="flex gap-3 flex-col">
+      <button
+        className="border p-2 hover:bg-red-400"
+        onClick={() => router.push("/current")}
+      >
         Current Implementation
       </button>
-      <button onClick={() => router.push("/server-component")}>
+      <button
+        className="border p-2 hover:bg-green-600"
+        onClick={() => router.push("/server-component")}
+      >
         Suggested Improvement
       </button>
-      <button onClick={() => router.push("/cache-route")}>
+      <button
+        className="border p-2 hover:bg-amber-400"
+        onClick={() => router.push("/cache-route")}
+      >
         Cache Strategy
+      </button>
+      <button
+        className="border p-2 hover:bg-indigo-400"
+        onClick={() => router.push("/parallel-route")}
+      >
+        parallel-route
       </button>
     </div>
   );
