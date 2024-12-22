@@ -28,7 +28,13 @@ const Button = () => {
         className="border p-2 hover:bg-indigo-400"
         onClick={() => router.push("/parallel-route")}
       >
-        parallel-route
+        Parallel Route
+      </button>
+      <button
+        className="border p-2 hover:bg-pink-600"
+        onClick={() => router.push("/intercepting-route")}
+      >
+        Intercepting Route
       </button>
     </div>
   );
