@@ -1,6 +1,8 @@
+import { cookies } from "next/headers";
 import pause from "../../../lib/utils";
 
 export default async function Boo() {
+  cookies();
   await pause(1000);
 
   return (

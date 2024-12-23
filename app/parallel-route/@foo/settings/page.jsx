@@ -1,6 +1,8 @@
+import { cookies } from "next/headers";
 import pause from "../../../../lib/utils";
 
 export default async function FooSettings() {
+  cookies();
   await pause(3000);
 
   //throw new Error('Settings Data not available')
